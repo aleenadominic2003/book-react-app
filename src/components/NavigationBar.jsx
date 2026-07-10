@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavigationBar = () => {
   return (
@@ -6,17 +7,17 @@ const NavigationBar = () => {
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <Link class="navbar-brand" href="#">Navbar</Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="/">Home</a>
-        <a class="nav-link" href="/search">Search Book</a>
-        <a class="nav-link" href="/delete">Delete Book</a>
-        <a class="nav-link" href="/view">View All</a>
-        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        <Link class="nav-link active" aria-current="page" to="/">Home</Link>
+        <Link class="nav-link" to="/search">Search Book</Link>
+        <Link class="nav-link" to="/delete">Delete Book</Link>
+        <Link class="nav-link" to="/view">View All</Link>
+        <Link class="nav-link disabled" aria-disabled="true">Disabled</Link>
       </div>
     </div>
   </div>
