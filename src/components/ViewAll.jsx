@@ -46,8 +46,8 @@ const ViewAll = () => {
 
     <div className="card-body">
         <h5 className="card-title">{value.name}</h5>
-        <p className="card-text"><b>Author:</b> Paulo Coelho</p>
-        <p className="card-text"><b>Price:</b> ₹399</p>
+        <p className="card-text"><b>Author:</b>{value.author}</p>
+        <p className="card-text"><b>Price:</b>{value.price}</p>
         <a href="#" className="btn btn-primary w-100">Add to Cart</a>
     </div>
 </div>
